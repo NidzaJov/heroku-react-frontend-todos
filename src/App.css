@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%
+}
+
+body {
+  background-color: #f4f5f7;
+  color: #172b4d;
+  font-size: 0.9rem;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  display: block;
+}
+
+.todos-root {
+  background-color: rgb(75, 191, 107);
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}
+
+.todos-root > button {
+  width: 30px;
+}
+
+.todos_root > input {
+  width: 20%;
+}
+
+.list {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  position: relative;
+  border-radius: 3px;
+  padding: 5px;
+  align-items: center;
+}
+
+.list-item {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow:  0 1px 0 #091e4240;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+  min-height: 25px;
+  position: relative;
+  z-index: 0;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  width: 100%;
+}
+
+.list-content > button {
+  display: inline-block;
+  height: 1.6rem;
+  border-radius: 3px;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 700;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reaction-div {
+  float: right;
+  margin-top: 0.1rem;
+}
+
+button.reaction-button {
+  border: 1px solid #e0e3e9;
+  padding: 2px 5px;
+  margin: 2px 3px 6px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.list-item > span {
+  text-align: left;
+  width: 30%;
+}
+
+
+.edit-card {
+  background-color: #fff;
+  width: 30%;
+  height: fit-content;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.edit-card > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.edit-card button {
+  background-color: #0079bf;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.stand-in-front {
+  background: #0009;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.stand-in-front label{
+  color: #172b4d;
+  text-align: left;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.App-div-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  background-color: rgb(75, 191, 107);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+  align-items: center;
+  height: 500px;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.login > div {
+  margin: 0 0 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+
+.login div label {
+  /*
+  min-width: 100px;
+  max-width: 150px;
+  */
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 30%;
+
+}
+
+.login > div  label  span {
+  margin-right: 15px;
+  width: 40%;
+  text-align: right;
+}
+
+.share-todo-root {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  min-height: 500px;
+  width: 70%;
+}
+
+.share-todo-root > h2 {
+  text-align: left;
+}
+
+.main-view-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f5f7;
+  width: 100%;
+}
+
+
+
+.userItem-list > h2 {
+  font-weight: 700;
+}
+
+.user-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #091e4221;
+  min-height: 40px;
+  padding: 12px 5px;
+  position: relative;
+  color: #172b4d;
+}
+
+.user-item > button {
+  border: none;
+  border-radius: 3px;
+  background-color: #dfe1e6;
+  cursor: pointer;
+}
+
+.user-item > span {
+  text-align: left;
+  width: 70%;
+}
+
+/* Notifications */
+
+.notification {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+}
+
+.notificationsList .notification + .notification {
+  border-top: none;
+}
+
+.notification.new {
+  background-color: rgba(29, 161, 242, 0.4);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
