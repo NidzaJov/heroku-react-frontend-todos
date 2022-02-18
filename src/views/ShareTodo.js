@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import MainLayout from './MainLayout';
 import { logout } from '../actions/authActions';
 import { getAllUsers } from '../actions/userActions';
-import UserItem from '../components/UserItem';
+import UserItem from '../components/userItem';
 
 export default function ShareTodo() {
     
