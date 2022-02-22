@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Todo App</h1>
-      
+      {console.log(process.env.NODE_ENV)}
       <Switch>
         <Route path="/login">
           <Login/>
