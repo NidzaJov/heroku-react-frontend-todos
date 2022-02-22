@@ -6,6 +6,7 @@ import Todos from './views/Todos';
 import ShareTodo from './views/ShareTodo';
 import './App.css'
 import SingleTodo from './views/SingleTodo';
+import { config } from './config';
 
 export default function App() {
   
@@ -16,6 +17,7 @@ export default function App() {
     <div className="App">
       <h1>Todo App</h1>
       {console.log(process.env.NODE_ENV)}
+      {console.log(config.API_URL)}
       <Switch>
         <Route path="/login">
           <Login/>
